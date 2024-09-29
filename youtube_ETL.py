@@ -37,7 +37,7 @@ def main():
         response = request.execute()
         comments_list.extend(process_comments(response['items']))
     df = pd.DataFrame(comments_list)
-    df.to_csv('s3://omar-sabor-first-test/youtube_comments.csv',index=False)
+    df.to_csv('teste.csv',index=False)
 
 
 def process_comments(response_items):
